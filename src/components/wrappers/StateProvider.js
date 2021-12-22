@@ -25,6 +25,11 @@ class StateProvider extends Component {
     }
 
     addNew(text) {
+
+        if (text==='foobar') {
+            throw new Error('NONONONONONO!!! Do not type foobar!!!!!')
+        }
+
         let updatedList = addToList(this.state.list, {text, completed: false});
 
         this.setState({list: updatedList});
