@@ -7,6 +7,8 @@ import { Provider, ErrorBoundary } from '@rollbar/react'; // <-- Provider import
 const rollbarConfig = {
   accessToken: "6979fe095a41411d934f02ebace6d7a3",
   captureUncaught: true,
+  ignoreDuplicateErrors: false,
+
   environment: "production",
   // server: {
   //   root: "http://localhost",
